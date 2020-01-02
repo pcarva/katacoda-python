@@ -52,6 +52,6 @@ len(student_names) == gives you the number of elements in the array.
 for statement:
 
 `for name in student_names:`{{execute}}
-`print("Student name is {0}").format(name)`{{execute}}
+`   print("Student name is {0}").format(name)`{{execute}}
 
 
