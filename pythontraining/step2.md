@@ -1,11 +1,12 @@
 <h2>If statements</h2>
 
-`number = 5`{{execute}}
-`if number == 5:`{{execute}
-    `print("Number is 5)"`{{execute}
-`else:`{{execute}
-    `print("Number is NOT 5")`{{execute}{{execute}
-
+```
+number = 5
+if number == 5:
+    print("Number is 5)"
+else:
+    print("Number is NOT 5")
+```{{execute}
 For adding more conditions you could use and / or operators like "if number == 5 or number == 2:"
 
 `if number == 5 or number == 2:`{{execute}
@@ -51,7 +52,11 @@ len(student_names) == gives you the number of elements in the array.
 <h2>Loops</h2>
 for statement:
 
-`for name in student_names:`{{execute}}
-`   print("Student name is {0}").format(name)`{{execute}}
+```
+for name in student_names:
+   print("Student name is {0}").format(name)
+
+```{{execute}}
+
 
 
