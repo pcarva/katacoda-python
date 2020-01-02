@@ -42,4 +42,13 @@ From python3.6 Also you can do it as:
 `"123".isdigit()`{{execute}} =>  True
 `"some,csv,values".split(",")`{{execute}} => == ['some','csv','values']
 
+<h2>Boolean</h2>
+
+In python boolean value can have True, False or None
+`var_true = True`{{execute}}
+`var_false = False`{{execute}}
+`var_true`{{execute}}
+`str(var_true)`{{execute}}
+`int(var_true)`{{execute}}
+
 
