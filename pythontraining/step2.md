@@ -4,13 +4,15 @@
 if number == 5:
     print("Number is 5")
 else:
-    print("Number is NOT 5")`{{execute}}
+    print("Number is NOT 5")
+`{{execute}}
 
 
 For adding more conditions you could use and / or operators like if number == 5 or number == 2:
 
 `if number == 5 or number == 2:
-    print("Number is 5 or 2)"`{{execute}}
+    print("Number is 5 or 2")
+    `{{execute}}
 
 On numbers comparisson you could use < / > to determine if it´s bigger or smaller.
 
@@ -24,8 +26,10 @@ Like in other lenguages you can work with list indexes, by using student_name[1]
 `print(student_names[1])`{{execute}}
 
 Also it´s allowed to change the value of that position:
-`student_names[1] = "Oliver"`{{execute}}
-`print(student_names[1])`{{execute}}
+`student_names[1] = "Oliver"
+print(student_names[1])
+
+`{{execute}}
 
 Now instead of Steve you can see Oliver there.
 For adding a new name use .append("new name")
