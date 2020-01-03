@@ -75,14 +75,14 @@ Katalina won´t be displayed becase we are skipping it:
 `for name in student_names:
     if name == "Katalina":
         continue             
-   print("Student name is {0}").format(name)`{{execute}}
+    print("Student name is {0}").format(name)`{{execute}}
 
 
 <h2>While loops</h2>
 
 `x = 0
 while x < 10:
-    print("Count is {0}").format(x))
+    print("Count is {0}").format(x)
     x +=1 `{{execute}}
 
 <h2>Dictionaries</h2>
@@ -114,5 +114,14 @@ List of dictionaries, it helps to do loops
 ]`{{execute}}
 
 
+<h2>Exception handler</h2>
 
+In order to handler different exceptions to prevent the application to stop, we can add a try - except section between the lines we want to verify. Then we could catch a specific type of error or even an unknown one. For example you could have something like:
+
+`try:
+    last_name = student["last_name"]
+except KeyError as error:
+    print("Error finding last_name." + error)
+except Exception as error:
+    print("A different type of error: " + error)`{{execute}}
 
