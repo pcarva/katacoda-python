@@ -58,5 +58,61 @@ len(student_names) == gives you the number of elements in the array.
 `for name in student_names:
    print("Student name is {0}").format(name)`{{execute}}
 
+<h2>Break and Continue</h2>
+
+break is used to exit a loop statement, continue just skip the current position and keep looping the rest.
+
+Once we find katalina it will exit:
+
+`for name in student_names:
+    if name == "Katalina":
+        print("found: " + name)
+        break
+    print("Student name is {0}").format(name)`{{execute}}
+
+Katalina won´t be displayed becase we are skipping it:
+
+`for name in student_names:
+    if name == "Katalina":
+        continue             
+   print("Student name is {0}").format(name)`{{execute}}
+
+
+<h2>While loops</h2>
+
+`x = 0
+while x < 10:
+    print("Count is {0}").format(x))
+    x +=1 `{{execute}}
+
+<h2>Dictionaries</h2>
+
+Uses Json format, it allows you to store diferent keys and values, also we can create a list of dictionaries. Values can be any type. We can also create a nested dictionary in case one of the keys it´s also a dictionary.
+
+`student = {
+    "name": "Mark",
+    "student_id": 15163,
+    "feedback": None
+}`{{execute}}
+
+In order to get a value we can use the name of the key to find the value. If key doesn´t exists we will have an error, but we could use .get function to return a default value in case we couldn´t find the key.
+
+`student["name"]`{{execute}}
+`student.get("last_name","NotFound")`{{execute}}
+
+There are other functions like .keys(), values(), the first one shows all the keys of the dictionary and the other one the values
+`student.keys()`{{execute}}
+`student.values()`{{execute}}
+To update, delete values it´s like with a list.
+
+List of dictionaries, it helps to do loops
+
+`all_student = [
+    {"name": "Mark","student_id": 15163,"feedback": None},
+    {"name": "Oliver","student_id": 62555,"feedback": true},
+    {"name": "Katalina","student_id": 12354,"feedback": false}
+]`{{execute}}
+
+
 
 
