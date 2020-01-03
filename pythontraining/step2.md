@@ -120,9 +120,8 @@ In order to handler different exceptions to prevent the application to stop, we 
 
 `try:
     last_name = student["last_name"]
-except KeyError as error:
-    print("Error finding last_name.")
-    print(error)
-except Exception as error:
-    print("A different type of error: " + error)`{{execute}}
+except KeyError:
+    print("Error finding last_name.")    
+except Exception:
+    print("A different type of error")`{{execute}}
 
